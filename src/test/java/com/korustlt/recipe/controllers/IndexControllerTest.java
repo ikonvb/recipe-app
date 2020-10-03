@@ -32,6 +32,16 @@ public class IndexControllerTest {
         indexController = new IndexController(recipeService);
     }
 
+//    @Test
+//    public void testMockMvc() {
+//        MockMvc mockMvc = MockMvcBuilders.standaloneSetup(indexController)
+//                .setViewResolvers()
+//                .build();
+//        mockMvc.perform(get("/"))
+//        .andExpect(status().isOk())
+//        .andExpect(view().name("index"));
+//    }
+
     @Test
     public void getIndexPage() {
         Set<Recipe> recipes = new HashSet<>();
